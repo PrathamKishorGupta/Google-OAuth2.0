@@ -12,7 +12,10 @@ const authRouter = require('./routes/authRouter');
 
 const cors = require('cors');
 
-app.use(cors());
+app.use(cors({
+  origin: ["https://your-frontend.onrender.com", "http://localhost:5173"],
+  credentials: true
+}));
 
 
 app.get('/',(req,res) => {

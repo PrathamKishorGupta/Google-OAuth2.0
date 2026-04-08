@@ -13,7 +13,7 @@ const authRouter = require('./routes/authRouter');
 const cors = require('cors');
 
 app.use(cors({
-  origin: ["https://your-frontend.onrender.com", "http://localhost:5173"],
+  origin: ["https://google-oauth2-0-fr.onrender.com", "http://localhost:5173"],
   credentials: true
 }));
 
